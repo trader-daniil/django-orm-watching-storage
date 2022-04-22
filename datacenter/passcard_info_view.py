@@ -5,13 +5,13 @@ from django.shortcuts import render
 
 def passcard_info_view(request, passcode):
     passcard = Passcard.objects.get(passcode=passcode)
-    deserialized_visits = Visit.objects.filter(passcard=passcard)
-    this_passcard_visits = []
-    for visit in deserialized_visits:
+    visits = Visit.objects.filter(passcard=passcard)
+    serialized_visits = []
+    for visit in visits:
         entered_at = visit.entered_at
         duration = visit.get_duration()
         is_strange = visit.is_visit_long()
-        this_passcard_visits.append(
+        serialized_visits.append(
             {
                 'entered_at': entered_at,
                 'duration': duration,
