@@ -20,10 +20,19 @@ Python должен быть установлен. Затем используй
 pip install -r requirements.txt
 ```
 
+Настройте переменные окружения для работы с Базой Данных:
+
+* DB_ENGINE
+* DB_HOST
+* DB_PORT
+* DB_NAME
+* DB_USER
+* DB_PASSWORD
+
 ### Запуск
 
 Для запуска программы введите в терминале команду:
 
 ```
-python main.py
+python manage.py
 ```
