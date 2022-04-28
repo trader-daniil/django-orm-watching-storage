@@ -1,8 +1,9 @@
 import os
 import sys
+import project
 
 if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "project.settings")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "project.setting")
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:

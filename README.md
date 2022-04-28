@@ -34,5 +34,5 @@ pip install -r requirements.txt
 Для запуска программы введите в терминале команду:
 
 ```
-python manage.py
+python manage.py runserver
 ```
